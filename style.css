@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+:root {
+  --main-bg-color: #0a1930;
+  --heading-text-color: #ecf1f7;
+  --small-text-color: #c0c5d0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--small-text-color);
+  font-family: "Poppins", sans-serif;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  /* change this maybe to something better */
+  max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(32 122 226);
+}
+
+/* heading classes */
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.full-name {
+  color: var(--heading-text-color);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #fff;
+  color: var(--main-bg-color);
+  border-radius: 15px;
+  padding: 5px 11px;
+  margin-right: 5px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.resume {
+  padding: 5px 25px;
+  margin-right: 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+}
+
+/* about me */
+.aboutme-tech-stack-wrapper {
+  padding: 20px;
+  display: flex;
+}
+
+.aboutme {
+  color: var(--heading-text-color);
+  margin: 16px 0;
+  font-size: larger;
+  width: 50%;
+}
+
+/* tech stack */
+
+.right-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 50px;
+  padding-top: 36px;
+  padding-left: 100px;
+}
+.tech-icon-container {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon {
+  font-size: 48px;
+}
+
+p {
+  color: #c2cee0;
+  margin: 10px 0;
+}
+
+/* buttons */
+
+.buttons-container {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  justify-content: center;
+}
+
+.years {
+  background-color: var(--main-bg-color);
+  color: var(--heading-text-color);
+  border-radius: 50%;
+  padding: 2px 10px;
+}
+
+/* projects */
+
+.about {
+  color: var(--heading-text-color);
+  margin: 16px 0;
+  font-size: larger;
+}
+
+.project-wrapper {
+  margin-top: 50px;
+  display: flex;
+}
+
+.project-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-right {
+  width: 50%;
+}
+
+.project-card {
+  min-width: 310px;
+  width: 500px;
+}
+
+.project-card-head {
+  background-color: #122541;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-card-body {
+  background-color: rgb(24, 23, 23);
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-row {
+  display: flex;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #182d4c;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* util classes */
+
+.ml200 {
+  margin-left: 200px;
+}
+
+.mb18 {
+  margin-bottom: 18px;
+}
+
+.mt {
+  margin-top: 16px;
+}
+
+.mb {
+  margin-bottom: 16px;
+}
+
+.m5 {
+  margin: 5px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+/* On screens that are 1100px or less */
+@media screen and (max-width: 1100px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ml200 {
+    display: none;
+  }
+
+  .project-right {
+    margin-top: 24px;
+  }
+}
+
+/* On screens that are 900px or less */
+@media screen and (max-width: 900px) {
+  .aboutme-tech-stack-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech-stack {
+    padding-left: 0px;
+  }
+
+  .aboutme {
+    width: 75%;
+  }
+
+  .buttons-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* On screens that are 700px or less */
+@media screen and (max-width: 700px) {
+  .heading {
+    flex-direction: column;
+    align-items: center;
+  }
+  .full-name {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .buttons-container {
+    font-size: x-small;
+  }
+}
