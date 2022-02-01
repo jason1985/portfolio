@@ -17,6 +17,13 @@ body {
   color: var(--small-text-color);
   font-family: "Poppins", sans-serif;
 
+  /* width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -196,6 +203,52 @@ p {
   padding: 10px;
 }
 
+/* current section */
+
+.current {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+}
+
+/* footer  */
+
+footer {
+  padding: 48px 0;
+  background-color: #000000;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+.scroll-to-top {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #3c3c3c;
+  width: 54px;
+  height: 54px;
+  z-index: 10;
+}
+.scroll-to-top-container {
+  margin-top: 20px;
+  margin-bottom: -27px;
+  display: flex;
+  justify-content: center;
+}
+
+.made-by {
+  color: #646464;
+}
+
+.date {
+  text-align: end;
+  font-size: smaller;
+}
+
 /* util classes */
 
 .ml200 {
@@ -222,12 +275,32 @@ p {
   margin-bottom: 40px;
 }
 
+.mb36 {
+  margin-bottom: 36px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.white {
+  color: white;
+}
 /* On screens that are 1100px or less */
 @media screen and (max-width: 1100px) {
   .project-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .current-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .current {
+    padding: 0px;
   }
 
   .ml200 {
@@ -266,6 +339,16 @@ p {
   }
   .full-name {
     font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .lgr {
+    font-size: larger;
+  }
+
+  .lg {
+    font-size: large;
   }
 }
 
