@@ -48,6 +48,13 @@ a {
   margin-bottom: 40px;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: var(--main-bg-color);
+  width: 100%;
+}
+
 .full-name {
   color: var(--heading-text-color);
   font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
