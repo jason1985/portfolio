@@ -357,6 +357,18 @@ footer {
   .lg {
     font-size: large;
   }
+
+  .project-card {
+    width: unset;
+  }
+
+  .project-right {
+    width: 70%;
+  }
+
+  .current {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 450px) {
