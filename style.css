@@ -30,6 +30,14 @@ body {
   max-width: 1200px;
 }
 
+ul {
+  /* list-style-position: inside;
+     this is a possible solution to indenting bullet points,
+     however when text wraps to a new line it looks worse
+  */
+  padding-left: 20px;
+}
+
 a {
   text-decoration: none;
   color: rgb(32 122 226);
