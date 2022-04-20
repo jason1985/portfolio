@@ -216,11 +216,13 @@ p {
 /* current section */
 
 .current {
+  color: var(--heading-text-color);
+  font-size: larger;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
-  width: 50%;
+  width: 100%;
 }
 
 /* footer  */
@@ -310,10 +312,6 @@ footer {
     justify-content: center;
   }
 
-  .current {
-    padding: 0px;
-  }
-
   .ml200 {
     display: none;
   }
@@ -331,6 +329,14 @@ footer {
   }
   .tech-stack {
     padding-left: 0px;
+  }
+
+  .current {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 75%;
   }
 
   .aboutme {
